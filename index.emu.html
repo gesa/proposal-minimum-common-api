@@ -177,7 +177,7 @@
     <p>ECMAScript-based runtime environment that implements this Standard</p>
 
     <emu-note>
-      <p>Web browsers are web-interoperable runtimes. The term "web-interoperable runtime" is intentionally broad. The primary focus of this Standard is web server runtimes.</p>
+      <p>Web browsers are web-interoperable runtimes. The term “web-interoperable runtime” is intentionally broad. The primary focus of this Standard is web server runtimes.</p>
     </emu-note>
   </emu-clause>
 </emu-clause>
@@ -188,7 +188,7 @@
   <p>All web-interoperable runtimes conforming to this Standard shall implement each of the following Web Platform APIs. These should be implemented in accordance with their normative requirements except as specified in Clause <emu-xref href="#sec-the-global-scope"></emu-xref>, <emu-xref href="#sec-the-global-scope" title></emu-xref>. Where any runtime environment must diverge from a normative requirement for technical or structural reasons, clear documentation shall be provided. Documentation shall include both explanation and impact of deviation.</p>
 
   <emu-note>
-    <p> For example, since web server runtimes do not have an origin concept, they must violate the Fetch Standard’s requirement of appending an Origin header to network requests.</p>
+    <p>For example, since web server runtimes do not have an origin concept, they must violate the Fetch Standard’s requirement of appending an Origin header to network requests.</p>
   </emu-note>
 
   <emu-clause id="sec-common-interfaces">
@@ -454,7 +454,7 @@
   <p>In cases where it is not possible to have such global objects be an instance of EventTarget due to legacy reasons, the relevant events shall still be fired through a suitable alternative mechanism available at the global scope. This mechanism shall provide at least the same information that is provided by the relevant event interfaces if the global object were to be an EventTarget. Such runtimes shall not support the onerror, onunhandledrejection and onrejectionhandled global properties. Such runtimes are not required to implement the ErrorEvent and PromiseRejectionEvent interfaces.</p>
 
   <emu-note>
-    <p> For example, in Node.js the global object does not implement EventTarget, and the relevant events are fired on the *globalThis*._process_ object with the names `uncaughtException`, `unhandledRejection` and `rejectionHandled`, respectively.</p>
+    <p>For example, in Node.js the global object does not implement EventTarget, and the relevant events are fired on the *globalThis*._process_ object with the names `uncaughtException`, `unhandledRejection` and `rejectionHandled`, respectively.</p>
   </emu-note>
 </emu-clause>
 
@@ -469,21 +469,23 @@ product-version = token
   <p>The default User-Agent value should be treated by application code as a single, complete, opaque, unstructured value. It is recommended that the value be limited to a single *product* token excluding the optional *product-version*. The value should not include any *comment* components.</p>
 
   <emu-note>
-    <p> For instance, navigator.userAgent could be set to *'MyRuntime'*.</p>
+    <p>For instance, navigator.userAgent could be set to *'MyRuntime'*.</p>
   </emu-note>
 </emu-clause>
 
 <emu-annex id="sec-colophon" back-matter>
   <h1>Colophon</h1>
 
-  <p>This specification is authored on
+  <p>
+    This specification is authored on
     <a href="https://github.com/WinterTC55/proposal-minimum-common-api/settings">GitHub</a> in a plaintext source format called
     <a href="https://github.com/tc39/ecmarkup">Ecmarkup</a>. Ecmarkup is an HTML and Markdown dialect that provides a framework and toolset for authoring Ecma specifications in plaintext and processing the specification into a full-featured HTML rendering that follows the editorial conventions for this document. Ecmarkup builds on and integrates a number of other formats and technologies including
     <a href="https://github.com/rbuckton/grammarkdown">Grammarkdown</a> for defining syntax and
     <a href="https://github.com/tc39/ecmarkdown">Ecmarkdown</a> for authoring algorithm steps. PDF renderings of this specification are produced using a print stylesheet which takes advantage of the CSS Paged Media specification and is converted using
-    <a href="https://www.princexml.com/">PrinceXML</a>.</p>
+    <a href="https://www.princexml.com/">PrinceXML</a>.
+  </p>
 
-    <p>Draft versions of this specification were authored in <a href="https://github.com/speced/bikeshed">bikeshed</a>, a specification preprocessor used by many web- and web-adjacent standards groups.</p>
+  <p>Draft versions of this specification were authored in <a href="https://github.com/speced/bikeshed">bikeshed</a>, a specification preprocessor used by many web- and web-adjacent standards groups.</p>
 </emu-annex>
 </body>
 </html>
