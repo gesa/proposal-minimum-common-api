@@ -32,21 +32,19 @@
 
   <dl>
     <dt>This version:</dt>
-    <dd><a class="u-url" href="https://https://min-common-api.wintertc.org/">https://min-common-api.wintertc.org/</a></dd>
+    <dd><a href="https://min-common-api.wintertc.org/">https://min-common-api.wintertc.org/</a></dd>
     <dt>Issue Tracking:</dt>
     <dd><a href="https://github.com/WinterTC55/proposal-minimum-common-api/issues/">GitHub</a></dd>
-    <dt class="editor">Editor:</dt>
-    <dd class="editor h-card p-author vcard"><a class="email fn p-name u-email" href="mailto:jsnell@cloudflare.com">James M Snell</a> (<a class="org p-org" href="https://cloudflare.com/">Cloudflare</a>)</dd>
+    <dt>Editor:</dt>
+    <dd><a href="mailto:jsnell@cloudflare.com">James M Snell</a> (<a href="https://cloudflare.com/">Cloudflare</a>)</dd>
   </dl>
 </div>
 
 <emu-intro id="sec-intro">
   <h1>Introduction</h1>
 
-  <p>There is a wide base of ECMAScript runtime environments being used beyond web browsers, specifically in web server and edge platforms. A major benefit to this approach is the ability to use a single programming language across multiple contexts, reducing specialisation and allowing for reuse of code across the server and client side.</p>
-
+  <p>There is a wide base of ECMAScript runtime environments being used beyond web browsers, specifically in web server and edge platforms. A major benefit to this approach is the ability to use a single programming language across multiple contexts, reducing specialization and allowing for reuse of code across the server and client side.</p>
   <p>Since code running in web browsers makes up the vast majority of ECMAScript code, runtimes are incentivised to support the same APIs as web browsers. However, without a specification of which web platform APIs to be implemented, the resulting landscape provides poor interoperability across such environments.</p>
-
   <p>As such, this Ecma Standard defines the Minimum common web API specification, which defines a subset of Web Platform APIs for server runtimes to implement for interoperability with the web. This is the first edition of the standard, corresponding to the 2025 snapshot. As the web platform and web server runtimes grow and evolve, the committee will aim to publish with an annual cadence.</p>
 </emu-intro>
 
@@ -61,88 +59,105 @@
   <h1>Conformance</h1>
 
   <p>A conforming implementation of this Standard shall provide the interfaces and properties listed in this specification, according to their definition in the corresponding W3C or WHATWG standard. A conforming implementation shall also conform to ECMA-262.</p>
-  <p>Runtime-specific extensions to any Web Platform API may be implemented by conforming runtimes. Such extensions shall be defined so that their use neither contradicts, nor causes the non-conformance of, normative functionality of any Web Platform API. Extending API surface, even without modifying existing API behaviours, should be avoided as it can reduce interoperability and portability of code across runtimes.</p>
+  <p>Runtime-specific extensions to any Web Platform API may be implemented by conforming runtimes. Such extensions shall be defined so that their use neither contradicts with, nor causes the non-conformance of, normative functionality of any Web Platform API. Extending API surface, even without modifying existing API behaviours, should be avoided as it can reduce interoperability and portability of code across runtimes.</p>
   <p>Runtimes may implement Web Platform APIs beyond those listed in this Standard.</p>
 
   <emu-note>
     Note: For example, the Performance API could be extended with additional methods or properties beyond those defined in the High-Resolution Time specifications, such as those defined in the Performance Timeline or User Timing Level 3 specifications.
   </emu-note>
-
 </emu-clause>
 
 <emu-clause id="sec-normative-references">
   <h1>Normative References</h1>
   <p>The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 
-  <p id="biblio-ecmascript">ECMA-262, <cite>ECMAScript Language Specification</cite><br>
-    <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+  <p>
+    ECMA-262, <cite>ECMAScript Language Specification</cite><br>
+    <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
   </p>
 
-  <p id="biblio-rfc9110">IETF RFC 9110, <cite>HTTP Semantics</cite>. June 2022.<br>
+  <p>
+    IETF RFC 9110, <cite>HTTP Semantics</cite>. June 2022.<br>
     <a href="https://datatracker.ietf.org/doc/rfc9110/">https://datatracker.ietf.org/doc/rfc9110/</a>
   </p>
 
-  <p id="biblio-fileapi">W3C <cite>File API</cite><br>
+  <p>
+    W3C <cite>File API</cite><br>
     <a href="https://w3c.github.io/FileAPI/">https://w3c.github.io/FileAPI/</a>
   </p>
 
-  <p id="biblio-hr-time">W3C <cite>High-Resolution Time</cite><br>
+  <p>
+    W3C <cite>High-Resolution Time</cite><br>
     <a href="https://w3c.github.io/hr-time/">https://w3c.github.io/hr-time/</a>
   </p>
 
-  <p id="biblio-wasm-js-api-2">W3C <cite>WebAssembly JavaScript Interface</cite><br>
+  <p>
+    W3C <cite>WebAssembly JavaScript Interface</cite><br>
     <a href="https://webassembly.github.io/spec/js-api/">https://webassembly.github.io/spec/js-api/</a>
   </p>
 
-  <p id="biblio-wasm-web-api-2">W3C <cite>WebAssembly Web API</cite><br>
+  <p>
+    W3C <cite>WebAssembly Web API</cite><br>
     <a href="https://webassembly.github.io/spec/web-api/">https://webassembly.github.io/spec/web-api/</a>
   </p>
 
-  <p id="biblio-webcrypto">W3C <cite>Web Cryptography Level 2</cite><br>
+  <p>
+    W3C <cite>Web Cryptography Level 2</cite><br>
     <a href="https://w3c.github.io/webcrypto/">https://w3c.github.io/webcrypto/</a>
   </p>
 
-  <p id="biblio-compression">WHATWG <cite>Compression Standard</cite><br>
+  <p>
+    WHATWG <cite>Compression Standard</cite><br>
     <a href="https://compression.spec.whatwg.org/">https://compression.spec.whatwg.org/</a>
   </p>
 
-  <p id="biblio-console">WHATWG <cite>Console Standard</cite><br>
+  <p>
+    WHATWG <cite>Console Standard</cite><br>
     <a href="https://console.spec.whatwg.org/">https://console.spec.whatwg.org/</a>
   </p>
 
-  <p id="biblio-dom">WHATWG <cite>DOM Standard</cite><br>
+  <p>
+    WHATWG <cite>DOM Standard</cite><br>
     <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
   </p>
 
-  <p id="biblio-encoding">WHATWG <cite>Encoding Standard</cite><br>
+  <p>
+    WHATWG <cite>Encoding Standard</cite><br>
     <a href="https://encoding.spec.whatwg.org/">https://encoding.spec.whatwg.org/</a>
   </p>
 
-  <p id="biblio-fetch">WHATWG <cite>Fetch Standard</cite><br>
+  <p>
+    WHATWG <cite>Fetch Standard</cite><br>
     <a href="https://fetch.spec.whatwg.org/">https://fetch.spec.whatwg.org/</a>
   </p>
 
-  <p id="biblio-html">WHATWG <cite>HTML Standard</cite><br>
+  <p>
+    WHATWG <cite>HTML Standard</cite><br>
     <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
   </p>
 
-  <p id="biblio-streams">WHATWG <cite>Streams Standard</cite><br>
+  <p>
+    WHATWG <cite>Streams Standard</cite><br>
     <a href="https://streams.spec.whatwg.org/">https://streams.spec.whatwg.org/</a>
   </p>
 
-  <p id="biblio-url">WHATWG <cite>URL Standard</cite><br>
+  <p>
+    WHATWG <cite>URL Standard</cite><br>
     <a href="https://url.spec.whatwg.org/">https://url.spec.whatwg.org/</a>
   </p>
 
-  <p id="biblio-urlpattern">WHATWG <cite>URL Pattern Standard</cite><br>
+  <p>
+    WHATWG <cite>URL Pattern Standard</cite><br>
     <a href="https://urlpattern.spec.whatwg.org/">https://urlpattern.spec.whatwg.org/</a>
   </p>
 
-  <p id="biblio-webidl">WHATWG <cite>Web IDL Standard</cite><br>
+  <p>
+    WHATWG <cite>Web IDL Standard</cite><br>
     <a href="https://webidl.spec.whatwg.org/">https://webidl.spec.whatwg.org/</a>
   </p>
 
-  <p id="biblio-xhr">WHATWG <cite>XMLHttpRequest Standard</cite><br>
+  <p>
+    WHATWG <cite>XMLHttpRequest Standard</cite><br>
     <a href="https://xhr.spec.whatwg.org/">https://xhr.spec.whatwg.org/</a>
   </p>
 </emu-clause>
@@ -150,7 +165,7 @@
 <emu-clause id="sec-terms-and-definitions">
   <h1>Terms and definitions</h1>
 
-  <p>For the purposes of this document, the terms and definitions given in ECMA-262, Compression Standard, Console Standard, DOM Standard, Encoding Standard, Fetch Standard, File API, High-Resolution Time, HTML Standard, Streams Standard, URL Standard, URL Pattern Standard, WebAssembly JavaScript Interface, WebAssembly Web API, W3C Web Cryptography Level 2, and the following apply. Externally-defined terms are mapped to source in Annex A.</p>
+  <p>For the purposes of this document, the terms and definitions given in ECMA-262, Compression Standard, Console Standard, DOM Standard, Encoding Standard, Fetch Standard, File API, High-Resolution Time, HTML Standard, Streams Standard, URL Standard, URL Pattern Standard, WebAssembly JavaScript Interface, WebAssembly Web API, W3C Web Cryptography Level 2, and the following apply.</p>
 
   <emu-clause id="sec-term-web-platform">
     <h1><dfn id="web-platform" variants="Web Platform">web platform</dfn></h1>
@@ -414,7 +429,7 @@
   <emu-clause id="sec-web-workers" normative-optional>
     <h1>Web workers</h1>
 
-    <p>This Standard does not require runtimes to support web workers. However, if a runtime has global scopes that map to WorkerGlobalScope (see <emu-xref href="#sec-the-global-scope" title></emu-xref>), then the global object shall also expose the following event handlers and attributes as defined in <a href="https://html.spec.whatwg.org/multipage/" data-link-type="biblio" title="HTML Standard">HTML Standard</a>, except as specified in <emu-xref href="#sec-the-global-scope" title></emu-xref>.</p>
+    <p>This Standard does not require runtimes to support web workers. However, if a runtime has global scopes that map to WorkerGlobalScope (see <emu-xref href="#sec-the-global-scope" title></emu-xref>), then the global object shall also expose the following event handlers and attributes as defined in HTML Standard, except as specified in <emu-xref href="#sec-the-global-scope" title></emu-xref>.</p>
 
     <ul>
       <li>workerGlobal.onerror</li>
@@ -468,7 +483,7 @@ product-version = token
     <a href="https://github.com/tc39/ecmarkdown">Ecmarkdown</a> for authoring algorithm steps. PDF renderings of this specification are produced using a print stylesheet which takes advantage of the CSS Paged Media specification and is converted using
     <a href="https://www.princexml.com/">PrinceXML</a>.</p>
 
-  <p>Draft versions of this specification were authored in <a href="https://github.com/speced/bikeshed">bikeshed</a>, a specification preprocessor used by many web- and web-adjacent standards groups.</p>
+    <p>Draft versions of this specification were authored in <a href="https://github.com/speced/bikeshed">bikeshed</a>, a specification preprocessor used by many web- and web-adjacent standards groups.</p>
 </emu-annex>
 </body>
 </html>
