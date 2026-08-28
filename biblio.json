@@ -2,493 +2,220 @@
   {
     "location": "https://tc39.es/ecma262/",
     "entries": [
-      {
-        "type": "term",
-        "term": "ECMA-262",
-        "id": "#"
-      },
-      {
-        "type": "term",
-        "term": "globalThis",
-        "id": "sec-globalthis"
-      },
-      {
-        "type": "term",
-        "term": "HostPromiseRejectionTracker<",
-        "id": "sec-host-promise-rejection-tracker"
-      }
+      { "type": "term", "id": "h1-ecma-262", "term": "ECMA-262" },
+      { "type": "term", "id": "sec-globalthis", "term": "globalThis" },
+      { "type": "term", "id": "sec-host-promise-rejection-tracker", "term": "HostPromiseRejectionTracker" }
     ]
   },
   {
     "location": "https://compression.spec.whatwg.org/",
     "entries": [
-      {
-        "type": "term",
-        "term": "Compression Standard",
-        "id": "#"
-      },
-      { "type": "op", "id": "compressionstream", "aoid": "CompressionStream" },
-      { "type": "op", "id": "decompressionstream", "aoid": "DecompressionStream" }
+      { "type": "term", "id": "h1-compression-standard", "term": "Compression Standard" },
+      { "type": "term", "id": "compressionstream", "term": "CompressionStream" },
+      { "type": "term", "id": "decompressionstream", "term": "DecompressionStream" }
     ]
   },
   {
     "location": "https://comms.spec.whatwg.org/",
     "entries": [
-      { "type": "op", "id": "messageevent", "aoid": "MessageEvent" }
+      { "type": "term", "id": "messageevent", "term": "MessageEvent" }
     ]
   },
   {
     "location": "https://console.spec.whatwg.org/",
     "entries": [
-      {
-        "type": "term",
-        "term": "Console Standard",
-        "id": "#"
-      },
-      {
-        "type": "op",
-        "aoid": "console",
-        "id": "namespacedef-console"
-      }
+      { "type": "term", "id": "h1-console", "term": "Console Standard" },
+      { "type": "term", "id": "namespacedef-console", "term": "console" }
     ]
   },
   {
-    "location": "https://datatracker.ietf.org/doc/html/rfc7231",
+    "location": "https://www.rfc-editor.org/rfc/rfc9110.html",
     "entries": [
-      {
-        "type": "term",
-        "term": "RFC7231",
-        "id": "#"
-      },
-      {
-        "type": "term",
-        "term": "User-Agent",
-        "id": "section-5.5.3"
-      }
+      { "type": "term", "id": "h1-rfc-9110", "term": "RFC 9110" },
+      { "type": "term", "id": "name-user-agent", "term": "User-Agent" }
     ]
   },
   {
     "location": "https://dom.spec.whatwg.org/",
     "entries": [
-      {
-        "type": "term",
-        "term": "DOM Standard",
-        "id": "#"
-      },
-      { "type": "op", "id": "customevent", "aoid": "CustomEvent" },
-      { "type": "op", "id": "abortcontroller", "aoid": "AbortController" },
-      { "type": "op", "id": "abortsignal", "aoid": "AbortSignal" },
-      { "type": "op", "id": "event", "aoid": "Event" },
-      { "type": "op", "id": "eventtarget", "aoid": "EventTarget" }
+      { "type": "term", "id": "h1-dom-standard", "term": "DOM Standard" },
+      { "type": "term", "id": "customevent", "term": "CustomEvent" },
+      { "type": "term", "id": "abortcontroller", "term": "AbortController" },
+      { "type": "term", "id": "abortsignal", "term": "AbortSignal" },
+      { "type": "term", "id": "event", "term": "Event" },
+      { "type": "term", "id": "eventtarget", "term": "EventTarget" }
     ]
   },
   {
     "location": "https://encoding.spec.whatwg.org/",
     "entries": [
-      {
-        "type": "term",
-        "term": "Encoding Standard",
-        "id": "#"
-      },
-      { "type": "op", "id": "textdecoder", "aoid": "TextDecoder" },
-      { "type": "op", "id": "textdecoderstream", "aoid": "TextDecoderStream" },
-      { "type": "op", "id": "textencoder", "aoid": "TextEncoder" },
-      { "type": "op", "id": "textencoderstream", "aoid": "TextEncoderStream" }
+      { "type": "term", "id": "h1-encoding", "term": "Encoding Standard" },
+      { "type": "term", "id": "textdecoder", "term": "TextDecoder" },
+      { "type": "term", "id": "textdecoderstream", "term": "TextDecoderStream" },
+      { "type": "term", "id": "textencoder", "term": "TextEncoder" },
+      { "type": "term", "id": "textencoderstream", "term": "TextEncoderStream" }
     ]
   },
   {
     "location": "https://fetch.spec.whatwg.org/",
     "entries": [
-      {
-        "type": "term",
-        "term": "Fetch Standard",
-        "id": "#"
-      },
-      {
-        "type": "op",
-        "aoid": "fetch()",
-        "id": "dom-global-fetch"
-      },
-      { "type": "op", "id": "headers", "aoid": "Headers" },
-      { "type": "op", "id": "request", "aoid": "Request" },
+      { "type": "term", "id": "h1-fetch", "term": "Fetch Standard" },
+      { "type": "term", "id": "dom-global-fetch", "term": "fetch()" },
+      { "type": "term", "id": "headers", "term": "Headers" },
+      { "type": "term", "id": "request", "term": "Request" },
       { "type": "term", "id": "default-user-agent-value", "term": "default User-Agent value" },
-      { "type": "op", "id": "response", "aoid": "Response" }
+      { "type": "term", "id": "response", "term": "Response" }
     ]
   },
   {
-    "location": "https://html.spec.whatwg.org/multipage/",
+    "location": "https://html.spec.whatwg.org/",
     "entries": [
-      {
-        "id": "#",
-        "term": "HTML Standard",
-        "type": "term"
-      }
-    ]
-  },
-  {
-    "location": "https://html.spec.whatwg.org/multipage/indices.html",
-    "entries": [
-      {
-        "id": "event-error",
-        "term": "event error",
-        "type": "term"
-      },
-      {
-        "id": "event-unhandledrejection",
-        "term": "unhandledrejection",
-        "type": "term"
-      },
-      {
-        "id": "event-rejectionhandled",
-        "term": "rejectionhandled",
-        "type": "term"
-      }
-    ]
-  },
-  {
-    "location": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
-    "entries": [
-      { "type": "op", "id": "dom-self", "aoid": "self" },
-      { "type":  "op", "id":"window", "aoid": "Window" }
-    ]
-  },
-  {
-    "location": "https://html.spec.whatwg.org/multipage/system-state.html",
-    "entries": [
-      { "type": "op", "id": "dom-cleartimeout", "aoid": "clearTimeout()" },
-      { "type": "op", "id": "dom-clearinterval", "aoid": "clearInterval()" },
-      { "type": "op", "id": "dom-queuemicrotask", "aoid": "queueMicrotask()" },
-      { "type": "op", "id": "dom-settimeout", "aoid": "setTimeout()" },
-      { "type": "op", "id": "dom-setinterval", "aoid": "setInterval()" },
-      { "type": "op", "id": "dom-navigator", "aoid": "navigator" },
-      { "type": "op", "id": "dom-navigator-useragent", "aoid": "navigator.userAgent" }
-    ]
-  },
-  {
-    "location": "https://html.spec.whatwg.org/multipage/structured-data.html",
-    "entries": [
-      { "type": "op", "id": "dom-structuredclone", "aoid": "structuredClone()" }
-    ]
-  },
-  {
-    "location": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html",
-    "entries": [
-      { "type": "op", "id": "dom-cleartimeout", "aoid": "clearTimeout()" },
-      { "type": "op", "id": "dom-clearinterval", "aoid": "clearInterval()" },
-      { "type": "op", "id": "dom-queuemicrotask", "aoid": "queueMicrotask()" },
-      { "type": "op", "id": "dom-settimeout", "aoid": "setTimeout()" },
-      { "type": "op", "id": "dom-setinterval", "aoid": "setInterval()" }
-    ]
-  },
-  {
-    "location": "https://html.spec.whatwg.org/multipage/webappapis.html",
-    "entries": [
-      { "type": "op", "id": "dom-atob", "aoid": "atob()" },
-      { "type": "op", "id": "dom-btoa", "aoid": "btoa()" },
-      { "type": "op", "id": "handler-onerror", "aoid": "onerror" },
-      { "type": "op", "id": "handler-window-onunhandledrejection", "aoid": "onunhandledrejection" },
-      { "type": "op", "id": "handler-window-onrejectionhandled", "aoid": "onrejectionhandled" },
-      { "type": "op", "id": "dom-reporterror", "aoid": "reportError()" },
-      { "type": "op", "id": "errorevent", "aoid": "ErrorEvent" },
-      { "type": "op", "id": "promiserejectionevent", "aoid": "PromiseRejectionEvent" },
-      { "type": "op", "id": "report-an-exception", "aoid": "report an exception" }
-    ]
-  },
-  {
-    "location": "https://html.spec.whatwg.org/multipage/webmessaging.html",
-    "entries": [
-      { "type": "op", "id": "messagechannel", "aoid": "MessageChannel" },
-      { "type": "op", "id": "messageport", "aoid": "MessagePort" }
-    ]
-  },
-  {
-    "location": "https://html.spec.whatwg.org/multipage/workers.html",
-    "entries": [
-      {
-        "id": "handler-workerglobalscope-onerror",
-        "aoid": "workerGlobal.onerror",
-        "type": "op"
-      },
-      {
-        "id": "handler-workerglobalscope-onunhandledrejection",
-        "aoid": "workerGlobal.onunhandledrejection",
-        "type": "op"
-      },
-      {
-        "id": "handler-workerglobalscope-onrejectionhandled",
-        "aoid": "workerGlobal.onrejectionhandled",
-        "type": "op"
-      },
-      {
-        "id": "dom-workerglobalscope-self",
-        "aoid": "workerGlobal.self",
-        "type": "op"
-      },
-      {
-        "id": "the-workerglobalscope-common-interface",
-        "type": "op",
-        "aoid": "WorkerGlobalScope"
-      }
+      { "type": "term", "id": "h1-html", "term": "HTML Standard" },
+      { "type": "term", "id": "event-error", "term": "event error" },
+      { "type": "term", "id": "event-unhandledrejection", "term": "unhandledrejection" },
+      { "type": "term", "id": "event-rejectionhandled", "term": "rejectionhandled" },
+      { "type": "term", "id": "dom-self", "term": "self" },
+      { "type": "term", "id": "window", "term": "Window" },
+      { "type": "term", "id": "dom-queuemicrotask", "term": "queueMicrotask()" },
+      { "type": "term", "id": "dom-settimeout", "term": "setTimeout()" },
+      { "type": "term", "id": "dom-cleartimeout", "term": "clearTimeout()" },
+      { "type": "term", "id": "dom-setinterval", "term": "setInterval()" },
+      { "type": "term", "id": "dom-clearinterval", "term": "clearInterval()" },
+      { "type": "term", "id": "dom-navigator", "term": "navigator" },
+      { "type": "term", "id": "dom-navigator-useragent", "term": "navigator.userAgent" },
+      { "type": "term", "id": "dom-structuredclone", "term": "structuredClone()" },
+      { "type": "term", "id": "dom-atob", "term": "atob()" },
+      { "type": "term", "id": "dom-btoa", "term": "btoa()" },
+      { "type": "term", "id": "handler-onerror", "term": "onerror" },
+      { "type": "term", "id": "handler-window-onunhandledrejection", "term": "onunhandledrejection" },
+      { "type": "term", "id": "handler-window-onrejectionhandled", "term": "onrejectionhandled" },
+      { "type": "term", "id": "dom-reporterror", "term": "reportError()" },
+      { "type": "term", "id": "errorevent", "term": "ErrorEvent" },
+      { "type": "term", "id": "promiserejectionevent", "term": "PromiseRejectionEvent" },
+      { "type": "term", "id": "report-an-exception", "term": "report an exception" },
+      { "type": "term", "id": "messagechannel", "term": "MessageChannel" },
+      { "type": "term", "id": "messageport", "term": "MessagePort" },
+      { "type": "term", "id": "handler-workerglobalscope-onerror", "term": "workerGlobal.onerror" },
+      { "type": "term", "id": "handler-workerglobalscope-onunhandledrejection", "term": "workerGlobal.onunhandledrejection" },
+      { "type": "term", "id": "handler-workerglobalscope-onrejectionhandled", "term": "workerGlobal.onrejectionhandled" },
+      { "type": "term", "id": "dom-workerglobalscope-self", "term": "workerGlobal.self" },
+      { "type": "term", "id": "the-workerglobalscope-common-interface", "term": "WorkerGlobalScope" }
     ]
   },
   {
     "location": "https://streams.spec.whatwg.org/",
     "entries": [
-      {
-        "type": "term",
-        "term": "Streams Standard",
-        "id": "#"
-      },
-      { "type": "op", "id": "bytelengthqueuingstrategy", "aoid": "ByteLengthQueuingStrategy" },
-      { "type": "op", "id": "countqueuingstrategy", "aoid": "CountQueuingStrategy" },
-      { "type": "op", "id": "readablebytestreamcontroller", "aoid": "ReadableByteStreamController" },
-      { "type": "op", "id": "readablestream", "aoid": "ReadableStream" },
-      { "type": "op", "id": "readablestreambyobreader", "aoid": "ReadableStreamBYOBReader" },
-      { "type": "op", "id": "readablestreambyobrequest", "aoid": "ReadableStreamBYOBRequest" },
-      { "type": "op", "id": "readablestreamdefaultcontroller", "aoid": "ReadableStreamDefaultController" },
-      { "type": "op", "id": "readablestreamdefaultreader", "aoid": "ReadableStreamDefaultReader" },
-      { "type": "op", "id": "transformstream", "aoid": "TransformStream" },
-      { "type": "op", "id": "transformstreamdefaultcontroller", "aoid": "TransformStreamDefaultController" },
-      { "type": "op", "id": "writablestream", "aoid": "WritableStream" },
-      { "type": "op", "id": "writablestreamdefaultcontroller", "aoid": "WritableStreamDefaultController" },
-      { "type": "op", "id": "writablestreamdefaultwriter", "aoid": "WritableStreamDefaultWriter" }
+      { "type": "term", "id": "h1-streams", "term": "Streams Standard" },
+      { "type": "term", "id": "bytelengthqueuingstrategy", "term": "ByteLengthQueuingStrategy" },
+      { "type": "term", "id": "countqueuingstrategy", "term": "CountQueuingStrategy" },
+      { "type": "term", "id": "readablebytestreamcontroller", "term": "ReadableByteStreamController" },
+      { "type": "term", "id": "readablestream", "term": "ReadableStream" },
+      { "type": "term", "id": "readablestreambyobreader", "term": "ReadableStreamBYOBReader" },
+      { "type": "term", "id": "readablestreambyobrequest", "term": "ReadableStreamBYOBRequest" },
+      { "type": "term", "id": "readablestreamdefaultcontroller", "term": "ReadableStreamDefaultController" },
+      { "type": "term", "id": "readablestreamdefaultreader", "term": "ReadableStreamDefaultReader" },
+      { "type": "term", "id": "transformstream", "term": "TransformStream" },
+      { "type": "term", "id": "transformstreamdefaultcontroller", "term": "TransformStreamDefaultController" },
+      { "type": "term", "id": "writablestream", "term": "WritableStream" },
+      { "type": "term", "id": "writablestreamdefaultcontroller", "term": "WritableStreamDefaultController" },
+      { "type": "term", "id": "writablestreamdefaultwriter", "term": "WritableStreamDefaultWriter" }
     ]
   },
   {
     "location": "https://url.spec.whatwg.org/",
     "entries": [
-      {
-        "type": "term",
-        "term": "URL Standard",
-        "id": "#"
-      },
-      {
-        "type": "op",
-        "aoid": "URL",
-        "id": "#url"
-      },
-      {
-        "type": "op",
-        "aoid": "URLSearchParams",
-        "id": "#urlsearchparams"
-      }
+      { "type": "term", "id": "url", "term": "URL" },
+      { "type": "term", "id": "h1-url", "term": "URL Standard" },
+      { "type": "term", "id": "urlsearchparams", "term": "URLSearchParams" }
     ]
   },
   {
     "location": "https://urlpattern.spec.whatwg.org/",
     "entries": [
-      {
-        "type": "term",
-        "term": "URL Pattern Standard",
-        "id": "#"
-      },
-      {
-        "type": "op",
-        "id": "urlpattern",
-        "aoid": "URLPattern"
-      }
+      { "type": "term", "id": "h1-url-pattern", "term": "URL Pattern Standard" },
+      { "type": "term", "id": "urlpattern", "term": "URLPattern" }
     ]
   },
   {
     "location": "https://w3c.github.io/FileAPI/",
     "entries": [
-      {
-        "type": "term",
-        "term": "File API",
-        "id": "#"
-      },
-      { "type": "op", "id": "dfn-Blob", "aoid": "Blob" },
-      { "type": "op", "id": "dfn-file", "aoid": "File" }
+      { "type": "term", "id": "h1-file-api", "term": "File API" },
+      { "type": "term", "id": "dfn-Blob", "term": "Blob" },
+      { "type": "term", "id": "dfn-file", "term": "File" }
     ]
   },
   {
     "location": "https://w3c.github.io/hr-time/",
     "entries": [
-      {
-        "id": "/",
-        "type": "term",
-        "term": "High-Resolution Time"
-      },
-      {
-        "id": "dom-performance",
-        "type": "term",
-        "term": "Performance"
-      },
-      {
-        "id": "dom-windoworworkerglobalscope-performance",
-        "type": "op",
-        "aoid": "performance"
-      }
+      { "type": "term", "id": "h1-high-resolution-time", "term": "High-Resolution Time" },
+      { "type": "term", "id": "sec-performance", "term": "Performance" },
+      { "type": "term", "id": "the-performance-attribute", "term": "performance" }
     ]
   },
   {
     "location": "https://w3c.github.io/performance-timeline/",
     "entries": [
-      {
-        "id": "/",
-        "type": "term",
-        "term": "Performance Timeline"
-      }
+      { "type": "term", "id": "h1-performance-timeline", "term": "Performance Timeline" }
     ]
   },
   {
     "location": "https://w3c.github.io/user-timing/",
     "entries": [
-      {
-        "id": "/",
-        "type": "term",
-        "term": "User Timing Level 3"
-      }
+      { "type": "term", "id": "h1-user-timing", "term": "User Timing Level 3" }
     ]
   },
   {
     "location": "https://w3c.github.io/webcrypto/",
     "entries": [
-      {
-        "type": "term",
-        "term": "Web Cryptography Level 2",
-        "id": "#"
-      },
-      {
-        "type": "op",
-        "aoid": "crypto",
-        "id": "dom-windoworworkerglobalscope-crypto"
-      },
-      { "type": "op", "id": "dfn-Crypto", "aoid": "Crypto" },
-      { "type": "op", "id": "dfn-CryptoKey", "aoid": "CryptoKey" },
-      { "type": "op", "id": "dfn-SubtleCrypto", "aoid": "SubtleCrypto" }
+      { "type": "term", "id": "h1-web-cryptography", "term": "Web Cryptography Level 2" },
+      { "type": "term", "id": "dom-windoworworkerglobalscope-crypto", "term": "crypto" },
+      { "type": "term", "id": "dfn-Crypto", "term": "Crypto" },
+      { "type": "term", "id": "dfn-CryptoKey", "term": "CryptoKey" },
+      { "type": "term", "id": "dfn-SubtleCrypto", "term": "SubtleCrypto" }
     ]
   },
   {
     "location": "https://webassembly.github.io/spec/js-api/",
     "entries": [
-      {
-        "id": "/",
-        "term": "WebAssembly JavaScript Interface",
-        "type": "term"
-      },
-      {
-        "id": "global",
-        "type": "op",
-        "aoid": "WebAssembly.Global"
-      },
-      {
-        "id": "instance",
-        "type": "op",
-        "aoid": "WebAssembly.Instance"
-      },
-      {
-        "id": "memory",
-        "type": "op",
-        "aoid": "WebAssembly.Memory"
-      },
-      {
-        "id": "module",
-        "type": "op",
-        "aoid": "WebAssembly.Module"
-      },
-      {
-        "id": "table",
-        "type": "op",
-        "aoid": "WebAssembly.Table"
-      },
-      {
-        "id": "tag",
-        "type": "op",
-        "aoid": "WebAssembly.Tag"
-      },
-      {
-        "id": "exception",
-        "type": "op",
-        "aoid": "WebAssembly.Exception"
-      },
-      {
-        "id": "exceptiondef-compileerror",
-        "type": "op",
-        "aoid": "WebAssembly.CompileError"
-      },
-      {
-        "id": "exceptiondef-linkerror",
-        "type": "op",
-        "aoid": "WebAssembly.LinkError"
-      },
-      {
-        "id": "exceptiondef-runtimeerror",
-        "type": "op",
-        "aoid": "WebAssembly.RuntimeError"
-      },
-      {
-        "id": "dom-webassembly-compile",
-        "type": "term",
-        "term": "WebAssembly.compile()"
-      },
-      {
-        "id": "dom-webassembly-instantiate",
-        "type": "term",
-        "term": "WebAssembly.instantiate()"
-      },
-      {
-        "id": "dom-webassembly-jstag",
-        "type": "term",
-        "term": "WebAssembly.JSTag"
-      },
-      {
-        "id": "dom-webassembly-validate",
-        "type": "term",
-        "term": "WebAssembly.validate()"
-      }
+      { "type": "term", "id": "h1-wasm-js", "term": "WebAssembly JavaScript Interface" },
+      { "type": "term", "id": "global", "term": "WebAssembly.Global" },
+      { "type": "term", "id": "instance", "term": "WebAssembly.Instance" },
+      { "type": "term", "id": "memory", "term": "WebAssembly.Memory" },
+      { "type": "term", "id": "module", "term": "WebAssembly.Module" },
+      { "type": "term", "id": "table", "term": "WebAssembly.Table" },
+      { "type": "term", "id": "tag", "term": "WebAssembly.Tag" },
+      { "type": "term", "id": "exception", "term": "WebAssembly.Exception" },
+      { "type": "term", "id": "exceptiondef-compileerror", "term": "WebAssembly.CompileError" },
+      { "type": "term", "id": "exceptiondef-linkerror", "term": "WebAssembly.LinkError" },
+      { "type": "term", "id": "exceptiondef-runtimeerror", "term": "WebAssembly.RuntimeError" },
+      { "type": "term", "id": "dom-webassembly-compile", "term": "WebAssembly.compile()" },
+      { "type": "term", "id": "dom-webassembly-instantiate", "term": "WebAssembly.instantiate()" },
+      { "type": "term", "id": "dom-webassembly-jstag", "term": "WebAssembly.JSTag" },
+      { "type": "term", "id": "dom-webassembly-validate", "term": "WebAssembly.validate()" }
     ]
   },
   {
     "location": "https://webassembly.github.io/spec/web-api/",
     "entries": [
-      {
-        "id": "#",
-        "type": "term",
-        "term": "WebAssembly Web API"
-      },
-      {
-        "id": "dom-webassembly-instantiatestreaming",
-        "type": "op",
-        "aoid": "WebAssembly.instantiateStreaming()"
-      },
-      {
-        "id": "dom-webassembly-compilestreaming",
-        "type": "op",
-        "aoid": "WebAssembly.compileStreaming()"
-      }
+      { "type": "term", "id": "h1-wasm-web", "term": "WebAssembly Web API" },
+      { "type": "term", "id": "dom-webassembly-instantiatestreaming", "term": "WebAssembly.instantiateStreaming()" },
+      { "type": "term", "id": "dom-webassembly-compilestreaming", "term": "WebAssembly.compileStreaming()" }
     ]
   },
   {
     "location": "https://webidl.spec.whatwg.org/",
     "entries": [
-      {
-        "type": "term",
-        "term": "Web IDL Standard",
-        "id": "#"
-      },
-      {
-        "type": "term",
-        "term": "readonly attribute",
-        "id": "dfn-read-only"
-      },
-      { "type": "op", "id": "idl-DOMException", "aoid": "DOMException" },
-      { "type": "op", "id": "exposed", "aoid": "[Exposed=*]" }
+      { "type": "term", "id": "h1-web-idl", "term": "Web IDL Standard" },
+      { "type": "term", "id": "dfn-read-only", "term": "readonly attribute" },
+      { "type": "term", "id": "idl-DOMException", "term": "DOMException" },
+      { "type": "term", "id": "exposed", "term": "[Exposed=*]" }
     ]
   },
   {
     "location": "https://xhr.spec.whatwg.org/",
     "entries": [
-      {
-        "type": "term",
-        "term": "XMLHttpRequest Standard",
-        "id": "#"
-      },
-      {
-        "type": "op",
-        "aoid": "FormData",
-        "id": "formdata"
-      }
+      { "type": "term", "id": "h1-xhr", "term": "XMLHttpRequest Standard" },
+      { "type": "term", "id": "formdata", "term": "FormData" }
     ]
   }
 ]
